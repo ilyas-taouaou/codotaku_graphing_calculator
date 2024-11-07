@@ -1,16 +1,21 @@
 [package]
-name = "codotaku_bevy_template"
+name = "codotaku_graphing_calculator"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 bevy = { version = "0.14.0", features = ["dynamic_linking"] }
 bevy-inspector-egui = "0.27.0"
+bevy-persistent = { version = "0.6.0", features = ["all"] }
 bevy_egui = "0.30.0"
+bevy_panorbit_camera = { version = "0.20.0", features = ["bevy_egui"] }
+bytemuck = "1.19.0"
+evalexpr = "12.0.1"
 log = { version = "*", features = [
     "max_level_debug",
     "release_max_level_warn",
 ] }
+serde = "1.0.214"
 
 [profile.dev]
 opt-level = 1
